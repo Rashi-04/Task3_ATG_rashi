@@ -1,0 +1,148 @@
+:root {
+    /* Colors */
+    --primary-color: #1890FF;
+    --secondary-color: #40A9FF;
+    --tertiary-color: #096DD9;
+
+    /* Font Sizes */
+    --font-size-primary: 16px;
+    --font-weight-primary: 400;
+    --line-height-primary: 24px;
+
+    /* Padding */
+    --padding-default: 8px 16px 8px 16px;
+    --padding-div: 8px 12px 8px 12px;
+
+    /* button width height */
+    --btn-width: Hug (80px)px;
+    --btn-height: Hug (40px)px;
+
+    /* input-div height weight */
+    --div-width: Fixed (320px)px;
+    --div-height: Hug (40px)px;
+    /* input-feild height width */
+    --input-width: 274px;
+    --input-height: 24px;
+
+    /* Font Family */
+    --font-family: roboto;
+
+    /*border */
+    --border-radius: 2px;
+
+    /* default margin */
+    --default-margin: 10px;
+
+    /* disabled-style */
+    --disabled-background-color: #ffffff;
+    --disabled-border: 1px solid #D9D9D9;
+    --disabled-color: #908d8d;
+}
+
+body{
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+/* Button */
+.btn-border {
+    border: none;
+}
+
+.margin{
+    margin: var(--default-margin);
+}
+
+.border-radius {
+    border-radius: var(--border-radius);
+    
+}
+.cursor{
+    cursor: pointer;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-primary:hover, .bg-primary:focus{
+    background-color: var(--secondary-color);
+}
+
+.bg-primary:active {
+    background-color: var(--tertiary-color);
+}
+.bg-primary:disabled{
+    background-color: var(--disabled-background-color);
+    color: var(--disabled-color);
+    border: var(--disabled-border);
+    cursor: not-allowed;
+}
+
+.btn-width-height {
+    width: var(--btn-width);
+    height: var(--btn-height);
+}
+
+.def-padding {
+    padding: var(--padding-default);
+}
+
+.font-primary {
+    font-size: var(--font-size-primary);
+    font-weight: var(--font-weight-primary);
+    line-height: var(--line-height-primary);
+    text-align: left;
+}
+
+.font-white {
+    color: white;
+}
+
+/* Input-div */
+.div-width-height {
+    width: var(--div-width);
+    height: var(--div-height);
+}
+
+.div-padd {
+    padding: var(--padding-div);
+    
+}
+.div-display-background{
+    background-color: var(--disabled-background-color);
+    display: inline;
+}
+
+.div-radius-border {
+    border-radius: var(--border-radius);
+    border: var(--disabled-border);
+}
+.div-radius-border:hover{
+    border-color: var(--secondary-color);
+}
+
+.div-radius-border:focus, .div-radius-border:active{
+    border-color: var(--primary-color);
+}
+
+/* Input */
+.input{
+    width: var(--input-width);
+    height: var(--input-height);
+}
+
+.font-primary2 {
+    text-decoration: none;
+    font-size: var(--font-size-primary);
+    font-weight: var(--font-weight-primary);
+    line-height: var(--line-height-primary);
+    text-align: left;
+    border: none;
+}
+
+textarea:focus ,.font-primary2:focus{
+    outline: none !important;
+}
+
+
